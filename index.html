@@ -46,8 +46,13 @@ body {
     overflow: hidden;
 }
 
+
+/* MUSIC */
+
 .music {
+
     position: fixed;
+
     top: 20px;
     right: 20px;
 
@@ -72,7 +77,11 @@ body {
     z-index: 100;
 }
 
+
+/* CARD */
+
 .card {
+
     width: 90%;
     max-width: 440px;
 
@@ -101,15 +110,21 @@ body {
     text-align: center;
 }
 
+
 .screen {
     width: 100%;
 }
+
 
 .hidden {
     display: none;
 }
 
+
+/* GIF */
+
 .gif {
+
     width: 180px;
     height: 180px;
 
@@ -133,19 +148,28 @@ body {
         rgba(70,40,60,.1);
 }
 
+
 .gif img {
+
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 }
 
+
 .gif-placeholder {
+
     font-size: 65px;
+
     opacity: .8;
 }
 
+
+/* TEXT */
+
 .eyebrow {
+
     font-size: 11px;
 
     letter-spacing: 2px;
@@ -155,7 +179,9 @@ body {
     margin-bottom: 15px;
 }
 
+
 h1 {
+
     font-size: 29px;
 
     line-height: 1.25;
@@ -164,7 +190,9 @@ h1 {
         10px 0 20px;
 }
 
+
 p {
+
     font-size: 16px;
 
     line-height: 1.6;
@@ -172,7 +200,11 @@ p {
     opacity: .7;
 }
 
+
+/* BUTTONS */
+
 button {
+
     border: none;
 
     border-radius: 50px;
@@ -190,12 +222,16 @@ button {
         .25s;
 }
 
+
 button:hover {
+
     transform:
         scale(1.05);
 }
 
+
 .yes {
+
     background:
         #29232d;
 
@@ -207,7 +243,9 @@ button:hover {
         rgba(40,30,45,.18);
 }
 
+
 .no {
+
     background:
         #eee7ef;
 
@@ -215,7 +253,9 @@ button:hover {
         #29232d;
 }
 
+
 .buttons {
+
     display: flex;
 
     justify-content: center;
@@ -227,7 +267,11 @@ button:hover {
     flex-wrap: wrap;
 }
 
+
+/* CHOICES */
+
 .choices {
+
     display: grid;
 
     grid-template-columns:
@@ -239,7 +283,9 @@ button:hover {
         25px 0;
 }
 
+
 .choice {
+
     background:
         #fff8fa;
 
@@ -256,7 +302,9 @@ button:hover {
         58px;
 }
 
+
 .choice.selected {
+
     border-color:
         #29232d;
 
@@ -267,7 +315,11 @@ button:hover {
         scale(1.03);
 }
 
+
+/* DATE */
+
 .date-choice {
+
     padding:
         17px 10px;
 
@@ -275,12 +327,20 @@ button:hover {
         15px;
 }
 
+
+/* TIME */
+
 .time-choice {
+
     padding:
         16px 10px;
 }
 
+
+/* FINAL */
+
 .final-date {
+
     margin:
         20px 0;
 
@@ -304,7 +364,9 @@ button:hover {
         #f6e1e8;
 }
 
+
 .small {
+
     font-size:
         12px;
 
@@ -312,14 +374,11 @@ button:hover {
         .45;
 }
 
-.screenshot-note {
-    font-size: 14px;
-    font-weight: bold;
-    opacity: .85;
-    margin-top: 18px;
-}
+
+/* FLOATING */
 
 .floating {
+
     position:
         fixed;
 
@@ -335,6 +394,7 @@ button:hover {
     z-index:
         200;
 }
+
 
 @keyframes floatUp {
 
@@ -352,6 +412,7 @@ button:hover {
 </style>
 
 </head>
+
 
 <body>
 
@@ -377,6 +438,7 @@ button:hover {
 🎵 Music
 
 </button>
+
 
 
 <div class="card">
@@ -462,6 +524,7 @@ NO
 </section>
 
 
+
 <!-- ========================= -->
 <!-- PAGE 2 -->
 <!-- ========================= -->
@@ -519,6 +582,7 @@ Let's do this →
 
 
 </section>
+
 
 
 <!-- ========================= -->
@@ -627,6 +691,7 @@ Next →
 </section>
 
 
+
 <!-- ========================= -->
 <!-- PAGE 4 -->
 <!-- ========================= -->
@@ -718,6 +783,7 @@ Next →
 
 
 </section>
+
 
 
 <!-- ========================= -->
@@ -839,6 +905,7 @@ Confirm date 💌
 </section>
 
 
+
 <!-- ========================= -->
 <!-- PAGE 6 -->
 <!-- ========================= -->
@@ -894,11 +961,7 @@ No cancellations.<br>
 
 No refunds. 😂
 
-
-</p>
-
-
-<p>
+<br><br>
 
 See you then, Gunsennorov. 🤍
 
@@ -922,9 +985,8 @@ Made with questionable intentions by Azzaya.
 </div>
 
 
-<!-- ========================= -->
+
 <!-- EMAILJS -->
-<!-- ========================= -->
 
 <script
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -934,7 +996,7 @@ Made with questionable intentions by Azzaya.
 <script>
 
 
-/* EMAILJS INITIALIZE */
+/* EMAILJS */
 
 emailjs.init({
     publicKey: "p7Seks0Yfkn__2Swz"
@@ -950,6 +1012,7 @@ let selectedDay = "";
 let selectedTime = "";
 
 let noCount = 0;
+
 
 
 /* PAGE */
@@ -972,6 +1035,7 @@ function showPage(pageId) {
 }
 
 
+
 /* YES */
 
 function yesClicked() {
@@ -981,6 +1045,7 @@ function yesClicked() {
     createHearts();
 
 }
+
 
 
 /* NO */
@@ -1049,6 +1114,7 @@ function noClicked() {
 }
 
 
+
 /* ACTIVITY */
 
 function selectActivity(
@@ -1096,6 +1162,7 @@ function goToDay() {
     showPage("page4");
 
 }
+
 
 
 /* DAY */
@@ -1147,6 +1214,7 @@ function goToTime() {
 }
 
 
+
 /* TIME */
 
 function selectTime(
@@ -1178,7 +1246,8 @@ function selectTime(
 }
 
 
-/* FINISH + SEND EMAIL */
+
+/* FINISH */
 
 function finishDate() {
 
@@ -1192,8 +1261,6 @@ function finishDate() {
 
     }
 
-
-    /* SHOW FINAL PAGE */
 
     showPage("page6");
 
@@ -1216,7 +1283,7 @@ function finishDate() {
     createHearts();
 
 
-    /* SEND EMAIL */
+    /* EMAIL */
 
     const templateParams = {
 
@@ -1242,7 +1309,7 @@ function finishDate() {
         function(response) {
 
             console.log(
-                "SUCCESS!",
+                "Email sent successfully!",
                 response.status,
                 response.text
             );
@@ -1252,7 +1319,7 @@ function finishDate() {
         function(error) {
 
             console.log(
-                "FAILED...",
+                "Email failed:",
                 error
             );
 
@@ -1260,6 +1327,7 @@ function finishDate() {
     );
 
 }
+
 
 
 /* HEARTS */
@@ -1341,6 +1409,7 @@ function createHearts() {
     }
 
 }
+
 
 
 /* MUSIC */
