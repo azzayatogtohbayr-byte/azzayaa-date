@@ -16,9 +16,7 @@
 }
 
 body {
-
     margin: 0;
-
     min-height: 100vh;
 
     font-family:
@@ -42,9 +40,7 @@ body {
     color: #29232d;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     overflow: hidden;
@@ -58,7 +54,6 @@ body {
     position: fixed;
 
     top: 20px;
-
     right: 20px;
 
     border: none;
@@ -88,7 +83,6 @@ body {
 .card {
 
     width: 90%;
-
     max-width: 440px;
 
     min-height: 650px;
@@ -111,7 +105,6 @@ body {
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     text-align: center;
@@ -119,13 +112,11 @@ body {
 
 
 .screen {
-
     width: 100%;
 }
 
 
 .hidden {
-
     display: none;
 }
 
@@ -135,7 +126,6 @@ body {
 .gif {
 
     width: 180px;
-
     height: 180px;
 
     margin:
@@ -151,7 +141,6 @@ body {
     display: flex;
 
     justify-content: center;
-
     align-items: center;
 
     box-shadow:
@@ -163,14 +152,11 @@ body {
 .gif img {
 
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
 }
 
-
-/* PLACEHOLDER */
 
 .gif-placeholder {
 
@@ -179,6 +165,8 @@ body {
     opacity: .8;
 }
 
+
+/* TEXT */
 
 .eyebrow {
 
@@ -213,7 +201,7 @@ p {
 }
 
 
-/* BUTTON */
+/* BUTTONS */
 
 button {
 
@@ -372,7 +360,8 @@ button:hover {
         1.8;
 
     box-shadow:
-        inset 0 0 0 1px #f6e1e8;
+        inset 0 0 0 1px
+        #f6e1e8;
 }
 
 
@@ -430,7 +419,9 @@ button:hover {
 
 <!-- MUSIC -->
 
-<audio id="music" loop>
+<audio
+    id="music"
+    loop>
 
     <source
         src="music.mp3"
@@ -453,21 +444,25 @@ button:hover {
 <div class="card">
 
 
+<!-- ========================= -->
 <!-- PAGE 1 -->
+<!-- ========================= -->
 
 <section
     id="page1"
     class="screen">
 
 
+<!-- GIF 3 -->
 <div class="gif">
 
-    <!-- Replace gif1.gif with your GIF -->
-
     <img
-        src="gif1.gif"
+        src="gif3.gif"
         alt="cute gif"
-        onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'gif-placeholder\'>🥹</div>'">
+        onerror="
+        this.style.display='none';
+        this.parentElement.innerHTML=
+        '<div class=\'gif-placeholder\'>🥹</div>'">
 
 </div>
 
@@ -483,7 +478,7 @@ A VERY IMPORTANT QUESTION
 
 Hey, Gunsennorov.
 
-<br>
+<br><br>
 
 Will you go on a date with me?
 
@@ -500,6 +495,7 @@ Don't think too much.
 
 
 <div class="buttons">
+
 
 <button
     class="yes"
@@ -519,6 +515,7 @@ NO
 
 </button>
 
+
 </div>
 
 
@@ -529,19 +526,26 @@ NO
 
 
 
+<!-- ========================= -->
 <!-- PAGE 2 -->
+<!-- ========================= -->
 
 <section
     id="page2"
     class="screen hidden">
 
 
+<!-- GIF 2 -->
+
 <div class="gif">
 
     <img
         src="gif2.gif"
         alt="happy gif"
-        onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'gif-placeholder\'>🎉</div>'">
+        onerror="
+        this.style.display='none';
+        this.parentElement.innerHTML=
+        '<div class=\'gif-placeholder\'>🎉</div>'">
 
 </div>
 
@@ -556,6 +560,8 @@ I KNEW IT
 <h1>
 
 Okay...
+
+<br>
 
 YOU SAID YES. 😂
 
@@ -582,19 +588,26 @@ Let's do this →
 
 
 
+<!-- ========================= -->
 <!-- PAGE 3 -->
+<!-- ========================= -->
 
 <section
     id="page3"
     class="screen hidden">
 
 
+<!-- GIF 1 -->
+
 <div class="gif">
 
     <img
-        src="gif3.gif"
+        src="gif1.gif"
         alt="date gif"
-        onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'gif-placeholder\'>👀</div>'">
+        onerror="
+        this.style.display='none';
+        this.parentElement.innerHTML=
+        '<div class=\'gif-placeholder\'>👀</div>'">
 
 </div>
 
@@ -618,7 +631,11 @@ What are we doing?
 
 <button
     class="choice"
-    onclick="selectActivity(this,'Coffee date ☕')">
+    onclick="
+    selectActivity(
+    this,
+    'Coffee date ☕'
+    )">
 
 Coffee date ☕
 
@@ -627,7 +644,11 @@ Coffee date ☕
 
 <button
     class="choice"
-    onclick="selectActivity(this,'Dinner date 🍝')">
+    onclick="
+    selectActivity(
+    this,
+    'Dinner date 🍝'
+    )">
 
 Dinner date 🍝
 
@@ -636,7 +657,11 @@ Dinner date 🍝
 
 <button
     class="choice"
-    onclick="selectActivity(this,'Movie night date 🎬')">
+    onclick="
+    selectActivity(
+    this,
+    'Movie night date 🎬'
+    )">
 
 Movie night date 🎬
 
@@ -645,7 +670,11 @@ Movie night date 🎬
 
 <button
     class="choice"
-    onclick="selectActivity(this,'Night walk date 🌙')">
+    onclick="
+    selectActivity(
+    this,
+    'Night walk date 🌙'
+    )">
 
 Night walk date 🌙
 
@@ -668,19 +697,26 @@ Next →
 
 
 
+<!-- ========================= -->
 <!-- PAGE 4 -->
+<!-- ========================= -->
 
 <section
     id="page4"
     class="screen hidden">
 
 
+<!-- GIF 4 -->
+
 <div class="gif">
 
     <img
         src="gif4.gif"
         alt="calendar gif"
-        onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'gif-placeholder\'>📅</div>'">
+        onerror="
+        this.style.display='none';
+        this.parentElement.innerHTML=
+        '<div class=\'gif-placeholder\'>📅</div>'">
 
 </div>
 
@@ -704,7 +740,11 @@ When are we doing this?
 
 <button
     class="choice date-choice"
-    onclick="selectDay(this,'September 4')">
+    onclick="
+    selectDay(
+    this,
+    'September 4'
+    )">
 
 September 4
 
@@ -713,7 +753,11 @@ September 4
 
 <button
     class="choice date-choice"
-    onclick="selectDay(this,'September 5')">
+    onclick="
+    selectDay(
+    this,
+    'September 5'
+    )">
 
 September 5
 
@@ -722,7 +766,11 @@ September 5
 
 <button
     class="choice date-choice"
-    onclick="selectDay(this,'September 6')">
+    onclick="
+    selectDay(
+    this,
+    'September 6'
+    )">
 
 September 6
 
@@ -745,19 +793,26 @@ Next →
 
 
 
+<!-- ========================= -->
 <!-- PAGE 5 -->
+<!-- ========================= -->
 
 <section
     id="page5"
     class="screen hidden">
 
 
+<!-- GIF 5 -->
+
 <div class="gif">
 
     <img
         src="gif5.gif"
         alt="clock gif"
-        onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'gif-placeholder\'>⏰</div>'">
+        onerror="
+        this.style.display='none';
+        this.parentElement.innerHTML=
+        '<div class=\'gif-placeholder\'>⏰</div>'">
 
 </div>
 
@@ -781,7 +836,11 @@ What time?
 
 <button
     class="choice time-choice"
-    onclick="selectTime(this,'17:00')">
+    onclick="
+    selectTime(
+    this,
+    '17:00'
+    )">
 
 17:00
 
@@ -790,7 +849,11 @@ What time?
 
 <button
     class="choice time-choice"
-    onclick="selectTime(this,'18:00')">
+    onclick="
+    selectTime(
+    this,
+    '18:00'
+    )">
 
 18:00
 
@@ -799,7 +862,11 @@ What time?
 
 <button
     class="choice time-choice"
-    onclick="selectTime(this,'19:00')">
+    onclick="
+    selectTime(
+    this,
+    '19:00'
+    )">
 
 19:00
 
@@ -808,7 +875,11 @@ What time?
 
 <button
     class="choice time-choice"
-    onclick="selectTime(this,'20:00')">
+    onclick="
+    selectTime(
+    this,
+    '20:00'
+    )">
 
 20:00
 
@@ -817,7 +888,11 @@ What time?
 
 <button
     class="choice time-choice"
-    onclick="selectTime(this,'21:00')">
+    onclick="
+    selectTime(
+    this,
+    '21:00'
+    )">
 
 21:00
 
@@ -840,19 +915,26 @@ Confirm date 💌
 
 
 
+<!-- ========================= -->
 <!-- PAGE 6 -->
+<!-- ========================= -->
 
 <section
     id="page6"
     class="screen hidden">
 
 
+<!-- GIF 6 -->
+
 <div class="gif">
 
     <img
         src="gif6.gif"
         alt="love gif"
-        onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'gif-placeholder\'>🤍</div>'">
+        onerror="
+        this.style.display='none';
+        this.parentElement.innerHTML=
+        '<div class=\'gif-placeholder\'>🤍</div>'">
 
 </div>
 
@@ -880,11 +962,19 @@ DATE CONFIRMED
 
 <p>
 
-See you then, Gunsennorov.
+<strong>
+Azzaya has officially reserved this date for you.
+</strong>
 
-<br>
+<br><br>
 
-Don't be late. 😂
+No cancellations.<br>
+
+No refunds. 😂
+
+<br><br>
+
+See you then, Gunsennorov. 🤍
 
 </p>
 
@@ -892,6 +982,10 @@ Don't be late. 😂
 <p class="small">
 
 Azzaya × Gunsennorov
+
+<br><br>
+
+Made with questionable intentions by Azzaya.
 
 </p>
 
@@ -905,6 +999,8 @@ Azzaya × Gunsennorov
 
 <script>
 
+
+/* VARIABLES */
 
 let selectedActivity = "";
 
@@ -922,9 +1018,12 @@ function showPage(pageId) {
 
     document
     .querySelectorAll(".screen")
-    .forEach(page =>
-        page.classList.add("hidden")
-    );
+    .forEach(page => {
+
+        page.classList.add("hidden");
+
+    });
+
 
     document
     .getElementById(pageId)
@@ -952,11 +1051,17 @@ function noClicked() {
 
     noCount++;
 
+
     const button =
-        document.getElementById("noButton");
+        document.getElementById(
+            "noButton"
+        );
+
 
     const message =
-        document.getElementById("message");
+        document.getElementById(
+            "message"
+        );
 
 
     const messages = [
@@ -969,12 +1074,15 @@ function noClicked() {
 
         "That button seems broken...",
 
-        "Nice try. 😌"
+        "Nice try. 😌",
+
+        "You can't escape this date. 😂"
 
     ];
 
 
     message.innerText =
+
         messages[
             Math.min(
                 noCount - 1,
@@ -988,11 +1096,17 @@ function noClicked() {
 
 
     button.style.left =
-        (10 + Math.random() * 70) + "%";
+
+        (10 +
+        Math.random() * 70)
+        + "%";
 
 
     button.style.top =
-        (15 + Math.random() * 65) + "%";
+
+        (15 +
+        Math.random() * 65)
+        + "%";
 
 }
 
@@ -1009,12 +1123,19 @@ function selectActivity(
     .querySelectorAll(
         "#page3 .choice"
     )
-    .forEach(btn =>
-        btn.classList.remove("selected")
+    .forEach(btn => {
+
+        btn.classList.remove(
+            "selected"
+        );
+
+    });
+
+
+    button.classList.add(
+        "selected"
     );
 
-
-    button.classList.add("selected");
 
     selectedActivity =
         activity;
@@ -1027,12 +1148,13 @@ function goToDay() {
     if (!selectedActivity) {
 
         alert(
-            "You have to choose one 😂"
+            "Choose one first 😂"
         );
 
         return;
 
     }
+
 
     showPage("page4");
 
@@ -1051,12 +1173,19 @@ function selectDay(
     .querySelectorAll(
         "#page4 .choice"
     )
-    .forEach(btn =>
-        btn.classList.remove("selected")
+    .forEach(btn => {
+
+        btn.classList.remove(
+            "selected"
+        );
+
+    });
+
+
+    button.classList.add(
+        "selected"
     );
 
-
-    button.classList.add("selected");
 
     selectedDay =
         day;
@@ -1076,6 +1205,7 @@ function goToTime() {
 
     }
 
+
     showPage("page5");
 
 }
@@ -1093,12 +1223,19 @@ function selectTime(
     .querySelectorAll(
         "#page5 .choice"
     )
-    .forEach(btn =>
-        btn.classList.remove("selected")
+    .forEach(btn => {
+
+        btn.classList.remove(
+            "selected"
+        );
+
+    });
+
+
+    button.classList.add(
+        "selected"
     );
 
-
-    button.classList.add("selected");
 
     selectedTime =
         time;
@@ -1130,9 +1267,11 @@ function finishDate() {
     .innerHTML =
 
         selectedDay +
+
         "<br>" +
 
         selectedTime +
+
         "<br>" +
 
         selectedActivity;
@@ -1166,7 +1305,9 @@ function createHearts() {
     ) {
 
         const heart =
-            document.createElement("div");
+            document.createElement(
+                "div"
+            );
 
 
         heart.className =
@@ -1174,6 +1315,7 @@ function createHearts() {
 
 
         heart.innerText =
+
             symbols[
                 Math.floor(
                     Math.random() *
@@ -1183,18 +1325,25 @@ function createHearts() {
 
 
         heart.style.left =
-            Math.random() * 100 +
+
+            Math.random() *
+            100 +
             "vw";
 
 
         heart.style.fontSize =
-            (16 +
-            Math.random() * 25) +
+
+            (
+                16 +
+                Math.random() * 25
+            ) +
             "px";
 
 
         heart.style.animationDelay =
-            Math.random() + "s";
+
+            Math.random() +
+            "s";
 
 
         document.body
@@ -1202,8 +1351,11 @@ function createHearts() {
 
 
         setTimeout(
-            () =>
-                heart.remove(),
+            () => {
+
+                heart.remove();
+
+            },
             5000
         );
 
